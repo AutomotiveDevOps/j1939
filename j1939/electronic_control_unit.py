@@ -397,7 +397,7 @@ class ElectronicControlUnit(object):
                     "num_packages": num_packages,
                     "next_packet": 1,
                     "data": [],
-                    "deadline": timestamp + ElectronicControlUnit.Timeout.T1,
+                    "deadline": time.time() + ElectronicControlUnit.Timeout.T1,
                     'src_address' : src_address,
                     'dest_address' : dest_address,
                 }
